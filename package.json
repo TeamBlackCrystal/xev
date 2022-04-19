@@ -1,6 +1,6 @@
 {
   "name": "@ayuskey/xev",
-  "version": "2.0.1-rei0784.1",
+  "version": "2.0.1-rei0784.2",
   "description": "Global event emitter",
   "keywords": [
     "event",
@@ -12,8 +12,8 @@
 		"syuilo"
 	],
   "license": "MIT",
-  "repository": "https://github.com/syuilo/xev.git",
-  "bugs": "https://github.com/syuilo/xev/issues",
+  "repository": "https://github.com/TeamBlackCrystal/xev.git",
+  "bugs": "https://github.com/TeamBlackCrystal/xev/issues",
   "main": "./built/index.js",
   "types": "./built/index.d.ts",
   "scripts": {
