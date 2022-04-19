@@ -1,5 +1,5 @@
 {
-  "name": "xev",
+  "name": "@ayuskey/xev",
   "version": "2.0.1",
   "description": "Global event emitter",
   "keywords": [
@@ -7,7 +7,10 @@
     "cluster",
     "messaging"
   ],
-  "author": "syuilo",
+  "author": "sousuke0422 <sousuke20xx@gmail.com>",
+	"contributors": [
+		"syuilo"
+	],
   "license": "MIT",
   "repository": "https://github.com/syuilo/xev.git",
   "bugs": "https://github.com/syuilo/xev/issues",
@@ -18,9 +21,9 @@
     "test": "mocha --harmony"
   },
   "devDependencies": {
-    "@types/mocha": "2.2.40",
-    "@types/node": "10.3.2",
-    "mocha": "3.2.0",
-    "typescript": "2.2.2"
+    "@types/mocha": "9.1.0",
+    "@types/node": "14.18.13",
+    "mocha": "9.2.2",
+    "typescript": "4.6.3"
   }
 }
