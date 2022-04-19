@@ -11,7 +11,7 @@ Global event system for [Node](https://github.com/nodejs/node).
 Install
 ----------------------------------------------------------------
 ``` shell
-$ npm install xev --save
+$ npm install @ayuskey/xev --save
 ```
 
 Usage
