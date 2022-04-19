@@ -4,8 +4,8 @@
  * MIT Licensed
  */
 
-import { EventEmitter } from 'events';
-import * as cluster from 'cluster';
+import { EventEmitter } from 'node:events';
+import * as cluster from 'node:cluster';
 import autobind from './autobind';
 
 /**
@@ -15,7 +15,7 @@ export default class Xev extends EventEmitter {
 	/**
 	 * Namespace
 	 */
-	public namespace: string;
+	public namespace: string | undefined;
 
 	/**
 	 * Whether is mounted
@@ -103,7 +103,7 @@ export default class Xev extends EventEmitter {
 
 		// Send message to each all workers
 		for (const id in cluster.workers) {
-			const worker = cluster.workers[id];
+			const worker = cluster.workers[id]!;
 			worker.send(message);
 		}
 	}
@@ -122,7 +122,7 @@ export default class Xev extends EventEmitter {
 		if (cluster.isMaster) {
 			process.emit('message', message, null);
 		} else {
-			process.send(message);
+			process.send!(message);
 		}
 
 		return true;
